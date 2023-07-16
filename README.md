@@ -5,7 +5,7 @@
 ## Example code 
 
 **main.cpp**
-*include "configreader.hpp" 
+include "configreader.hpp" 
 int main()
 {
    ConfigReader* p = ConfigReader::getInstance();
@@ -14,7 +14,7 @@ int main()
    p->getValue("mcast_recv_addr", recv_addr);
    p->getValue("mcast_recv_port", recvport);
 
-}*
+}
 
 **config.ini**
 *localIP = 0.0.0.0

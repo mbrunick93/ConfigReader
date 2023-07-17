@@ -1,3 +1,4 @@
+
 #include "ConfigReader.hpp"
 #include <fstream>
 #include <algorithm>
@@ -16,6 +17,7 @@ ConfigReader::ConfigReader()
 ConfigReader::~ConfigReader()
 {
    m_ConfigSettingMap.clear();
+   delete m_pInstance;
 }
 
 ConfigReader* ConfigReader::getInstance()
@@ -149,13 +151,4 @@ std::string ConfigReader::reduce(const std::string& str,
    }
 
    return result;
-}
-
-void ConfigReader::dumpFileValues()
-{
-   map<string, string>::iterator it;
-   for(it=m_ConfigSettingMap.begin(); it!=m_ConfigSettingMap.end(); ++it)
-   {
-      cout << it->first << " = " << it->second << endl;
-   }
 }

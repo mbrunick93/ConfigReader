@@ -1,10 +1,9 @@
 # ConfigReader
 
-test
-
 ## Example code 
 
 **main.cpp**
+<pre>
 include "configreader.hpp" 
 int main()  
 {  
@@ -13,7 +12,8 @@ int main()
    p->getValue("localIP", nicip);  
    p->getValue("mcast_recv_addr", recv_addr);  
    p->getValue("mcast_recv_port", recvport);  
-}  
+}
+</pre>  
 **config.ini**  
 *localIP = 0.0.0.0  
 mcast_recv_addr = 224.1.17.18  

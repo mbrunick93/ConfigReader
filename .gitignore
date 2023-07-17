@@ -146,3 +146,12 @@ build/unit_test/CMakeFiles/ConfigReaderTest.dir/DependInfo.cmake
 build/unit_test/CMakeFiles/ConfigReaderTest.dir/flags.make
 build/unit_test/CMakeFiles/ConfigReaderTest.dir/link.txt
 build/unit_test/CMakeFiles/ConfigReaderTest.dir/progress.make
+build/.cmake/api/v1/reply/index-2023-07-17T03-26-10-0483.json
+build/CMakeFiles/ConfigReader.dir/compiler_depend.internal
+build/Testing/20230717-0326/Test.xml
+build/Testing/Temporary/LastTest_20230717-0326.log
+build/googletest/googlemock/CMakeFiles/gmock.dir/compiler_depend.internal
+build/googletest/googlemock/CMakeFiles/gmock_main.dir/compiler_depend.internal
+build/googletest/googletest/CMakeFiles/gtest.dir/compiler_depend.internal
+build/googletest/googletest/CMakeFiles/gtest_main.dir/compiler_depend.internal
+build/unit_test/CMakeFiles/ConfigReaderTest.dir/compiler_depend.internal

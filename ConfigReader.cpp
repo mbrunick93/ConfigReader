@@ -96,12 +96,6 @@ bool ConfigReader::parseFile(string fileName)
       if(tag.empty() || value.empty())
          continue;
 
-      // Check if any of the tags is repeated more than one times
-      // it needs to pick the latest one instead of the old one.
-
-      // Search, if the tag is already present or not
-      // If it is already present, then delete an existing one
-
       std::map<std::string, std::string>::iterator itr = m_ConfigSettingMap.find(tag);
       if(itr != m_ConfigSettingMap.end())
       {
@@ -129,11 +123,9 @@ std::string ConfigReader::reduce(const std::string& str,
       const std::string& fill,
       const std::string& whitespace)
 {
-   // trim first
    string result = trim(str, whitespace);
-
-   // replace sub ranges
    size_t beginSpace = result.find_first_of(whitespace);
+   
    while (beginSpace != std::string::npos)
    {
       size_t endSpace = result.find_first_not_of(whitespace, beginSpace);

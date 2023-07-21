@@ -22,11 +22,6 @@ ConfigReader::~ConfigReader()
 
 ConfigReader* ConfigReader::getInstance()
 {
-   // No need to use double re-check lock mechanism here
-   // because this getInstance() will call at the time of
-   // initialization only and mostly, at the time of
-   // initialization, there will be only one thread.
-
    if(NULL_PTR == m_pInstance)
    {
       m_pInstance = new ConfigReader;
